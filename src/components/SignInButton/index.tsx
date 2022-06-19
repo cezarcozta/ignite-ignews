@@ -10,7 +10,7 @@ export function SignInButton() {
     try {
       await signIn('github');
     } catch (err) {
-      return err;
+      alert(err.message);
     }
   };
 
@@ -18,7 +18,7 @@ export function SignInButton() {
     try {
       await signOut();
     } catch (err) {
-      return err;
+      alert(err.message);
     }
   };
 
